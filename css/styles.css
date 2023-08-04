@@ -9,6 +9,9 @@
   /* Text color: */
   --heading-color: #1b0760;
   --body-color: #918ca4;
+
+  /* Border */
+  --border-color: #ccc;
 }
 
 /* Typography */
@@ -233,9 +236,25 @@ a {
   padding: 1.5rem 3.5rem;
   border-radius: 30px;
   outline: 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   color: var(--heading-color);
   font-size: 2rem;
+}
+
+.input-group {
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+  margin: 4px;
 }
 
 ::placeholder {
