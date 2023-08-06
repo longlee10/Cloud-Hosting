@@ -8,28 +8,18 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section class="block container">
-      <header class="block-header">
-        <h2 class="block-heading">Heading</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          temporibus esse beatae sit repudiandae blanditiis, cumque placeat.
-          Fugiat, maxime iure.
-        </p>
-      </header>
-    </section>
-    <section class="block block-dark block-skew-right">
-      <div class="container">
-        <header class="block-header">
-          <h2 class="block-heading">Heading</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            temporibus esse beatae sit repudiandae blanditiis, cumque placeat.
-            Fugiat, maxime iure.
-          </p>
-        </header>
-      </div>
-    </section>
+    <nav class="nav collapsible">
+      <a class="nav-brand" href="/"><img src="./icons/logo.svg" alt="" /></a>
+      <svg class="icon icon-white nav-toggler">
+        <use xlink:href="../icons/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav-list collapsible-content">
+        <li class="nav-item"><a href="#">Hosting</a></li>
+        <li class="nav-item"><a href="#">VPS</a></li>
+        <li class="nav-item"><a href="#">Domain</a></li>
+        <li class="nav-item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
     <script src="./js/main.js"></script>
   </body>
 </html>
