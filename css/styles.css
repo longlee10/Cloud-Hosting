@@ -32,6 +32,7 @@ h2,
 h3 {
   color: var(--heading-color);
   margin-bottom: 1.5rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -663,5 +664,32 @@ a {
 
   .nav-item {
     border: 0;
+  }
+}
+
+/* Hero (banner) */
+.hero {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero-tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero-content {
+    text-align: left;
+    align-self: center;
   }
 }
