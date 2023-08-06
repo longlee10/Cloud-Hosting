@@ -561,3 +561,42 @@ a {
   max-height: 100vh;
   overflow: visible;
 }
+
+/* Blocks */
+.block {
+  --vertical-padding: 6rem; /*This variable is accessible for all children of the
+                              element of this class.*/
+  padding: var(--vertical-padding) 2rem;
+}
+
+.block-heading {
+  margin-top: 0;
+}
+
+.block-header {
+  text-align: center;
+}
+
+.block-dark {
+  background-color: black;
+  color: #7b858b;
+}
+
+.block-dark .block-heading {
+  color: white;
+}
+
+.block-skew-right {
+  padding-bottom: calc(var(--vertical-padding) + 4rem);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+.block-skew-left {
+  padding-bottom: calc(var(--vertical-padding) + 4rem);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
