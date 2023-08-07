@@ -312,6 +312,10 @@ a {
   color: white;
 }
 
+.card-primary .badge-primary {
+  background-color: #126de4;
+}
+
 .card-secondary .card-header {
   background-color: var(--secondary-color);
   color: white;
@@ -322,6 +326,10 @@ a {
 }
 
 /* Plan */
+.plan {
+  transition: transform 0.5s ease-out;
+}
+
 .plan-name {
   color: white;
   margin: 0;
@@ -352,6 +360,10 @@ a {
   letter-spacing: 1px;
 }
 
+.plan-popular {
+  transform: scale(1.1);
+}
+
 .plan-popular .card-header {
   position: relative;
 }
@@ -363,6 +375,14 @@ a {
   position: absolute;
   top: -6px;
   right: 5%;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan-popular:hover {
+  transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
@@ -380,6 +400,16 @@ a {
 
   .plan-description {
     font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .plan-popular {
+    transform: scale(1);
+  }
+
+  .plan-popular:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -726,4 +756,14 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     grid-template-rows: 6rem;
   }
+}
+
+/* Plan block */
+.block-plan .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.block-plan .grid {
+  gap: 8rem 4rem;
 }
