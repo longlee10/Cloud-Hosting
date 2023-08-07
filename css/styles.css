@@ -133,8 +133,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--heading-color);
-  font-weight: bold;
 }
 
 .list-inline .list-item {
@@ -145,6 +143,7 @@ a {
 .list-tick {
   list-style-image: url(../icons/tick.svg);
   padding-left: 3rem;
+  color: var(--heading-color);
 }
 
 .list-tick .list-item {
@@ -416,6 +415,7 @@ a {
 /* Media */
 .media {
   display: flex;
+  margin-bottom: 4rem;
 }
 
 .media-title {
@@ -790,5 +790,34 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature-content {
     order: 2;
+  }
+}
+
+/* Showcase block */
+.showcase {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.showcase-img {
+  width: 100%;
+}
+
+/* temporary solution */
+.showcase h3 {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase-img {
+    justify-self: end;
+  }
+
+  .showcase-img {
+    width: auto;
+    max-width: 700px;
   }
 }
