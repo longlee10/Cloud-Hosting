@@ -533,6 +533,8 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 5px;
+  position: relative;
+  top: 4rem;
 }
 
 .callout-primary {
@@ -567,6 +569,13 @@ a {
   .callout .btn {
     justify-self: left;
     margin: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .callout {
+    max-width: 70%;
+    margin: auto;
   }
 }
 
